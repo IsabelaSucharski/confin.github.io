@@ -1,0 +1,15 @@
+.divText {
+  padding: 0 87.5px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 23px;
+}
+
+.divButton {
+  display: flex;
+  justify-content: end;
+  width: -webkit-fill-available;
+  padding-right: 16px;
+}
