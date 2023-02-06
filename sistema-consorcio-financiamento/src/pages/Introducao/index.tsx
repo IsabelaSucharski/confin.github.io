@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { ButtonNext } from "../../components/ButtonNext";
 import { Card } from "../../components/Card";
 import { Header } from "../../components/Header";
@@ -22,7 +23,9 @@ export const Introducao: React.FC = () => {
       </div>
 
       <div className="divButton">
-        <ButtonNext />
+        <Link to={"formulario"}>
+          <ButtonNext toPage={2} />
+        </Link>
       </div>
     </Card>
   );
