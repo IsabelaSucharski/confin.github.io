@@ -3,8 +3,23 @@
 .ant-input-affix-wrapper:hover,
 .ant-input-affix-wrapper-focused,
 .ant-input-affix-wrapper:not(.ant-input-affix-wrapper-disabled):hover {
-  border-color: #B58392;
+  border-color: #49454F;
   outline: 0;
   -webkit-box-shadow: 0 0 0 2px #FFD8E4;
   box-shadow: 0 0 0 2px #FFD8E4;
+}
+
+
+.ant-input {
+  background-color: #E7E0EC;
+  border-color: #49454F;
+  color: black;
+}
+
+.ant-input::placeholder {
+  color: black;
+}
+
+.ant-row {
+  display: block;
 }

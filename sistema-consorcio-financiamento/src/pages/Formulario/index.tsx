@@ -12,77 +12,54 @@ export const Formulario: React.FC = () => {
       <span>Preencha alguns campos</span>
       <Form
         name="basic"
-        labelCol={{ span: 8 }}
-        wrapperCol={{ span: 16 }}
-        style={{ maxWidth: 600 }}
+        wrapperCol={{ span: 22 }}
+        style={{ maxWidth: "100%" }}
         initialValues={{ remember: true }}
         autoComplete="off"
       >
-        <Input.Group size="large">
-          <Row>
-            <Col>
-              <Form.Item
-                name="name"
-                rules={[
-                  { required: true, message: "Por favor insira seu nome" },
-                ]}
-              >
-                <Input placeholder="Qual seu nome?" />
-              </Form.Item>
-            </Col>
-            <Col>
-              <Form.Item
-                name="age"
-                rules={[
-                  { required: true, message: "Por favor insira sua idade" },
-                ]}
-              >
-                <Input placeholder="Qual a sua idade?" />
-              </Form.Item>
-            </Col>
-          </Row>
+        <Input.Group compact>
+          <Form.Item
+            name="name"
+            label="Qual seu nome"
+            rules={[{ required: true, message: "Por favor insira seu nome" }]}
+            style={{ width: "70%" }}
+          >
+            <Input />
+          </Form.Item>
+          <Form.Item
+            name="age"
+            label="Qual a sua idade"
+            rules={[{ required: true, message: "Por favor insira sua idade" }]}
+            style={{ width: "30%" }}
+          >
+            <Input type="number" />
+          </Form.Item>
         </Input.Group>
 
-        <Input.Group size="large">
-          <Row>
-            <Col>
-              <Form.Item name="homeValue">
-                <Input placeholder="Qual valor que deseja do imóvel? " />
-              </Form.Item>
-            </Col>
-            <Col>
-              <Form.Item name="monthtlyValue">
-                <Input placeholder="Quanto deseja pagar por mês?" />
-              </Form.Item>
-            </Col>
-          </Row>
+        <Input.Group compact>
+          <Form.Item
+            name="homeValue"
+            label="Qual valor do imóvel"
+            style={{ width: "50%" }}
+          >
+            <Input />
+          </Form.Item>
+          <Form.Item
+            name="monthtlyValue"
+            label="Quanto deseja pagar por mês"
+            style={{ width: "50%" }}
+          >
+            <Input />
+          </Form.Item>
         </Input.Group>
-        <Input.Group>
-          <Row>
-            <Col>
-              <span>Necessita o imóvel a curto ou longo prazo?</span>
-            </Col>
-            <Col>
-              <Form.Item
-                name="username"
-                rules={[
-                  { required: true, message: "Please input your username!" },
-                ]}
-              >
-                <Radio>Radio</Radio>
-              </Form.Item>
-            </Col>
-            <Col>
-              <Form.Item
-                name="username"
-                rules={[
-                  { required: true, message: "Please input your username!" },
-                ]}
-              >
-                <Radio>Radio</Radio>
-              </Form.Item>
-            </Col>
-          </Row>
+        <Input.Group compact>
+          <span>Necessita o imóvel a curto ou longo prazo?</span>
+          <Form.Item name="username">
+            <Radio>Radio</Radio>
+          </Form.Item>
+          <Form.Item name="username">
+            <Radio>Radio</Radio>
+          </Form.Item>
         </Input.Group>
 
         <Input.Group>
