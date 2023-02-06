@@ -6,6 +6,6 @@
   gap: 40px;
   padding-bottom: 16px;
   width: 600px;
-  height: 500px;
+  max-height: 1000px;
   border-radius: 10px;
 }
