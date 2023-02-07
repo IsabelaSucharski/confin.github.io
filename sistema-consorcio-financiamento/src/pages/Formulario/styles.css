@@ -1,14 +1,20 @@
 .ant-input:focus,
-:not(#basic_password).ant-input:hover,
+.ant-input:hover,
 .ant-input-affix-wrapper:hover,
 .ant-input-affix-wrapper-focused,
-.ant-input-affix-wrapper:not(.ant-input-affix-wrapper-disabled):hover {
+.ant-input-affix-wrapper:not(.ant-input-affix-wrapper-disabled):hover,
+.ant-input-number:hover,
+.ant-input-number-input:hover {
   border-color: #49454F;
   outline: 0;
   -webkit-box-shadow: 0 0 0 2px #FFD8E4;
   box-shadow: 0 0 0 2px #FFD8E4;
 }
 
+.ant-input-number {
+  background-color: #E7E0EC;
+  border-color: #49454F;
+}
 
 .ant-input {
   background-color: #E7E0EC;
@@ -16,10 +22,64 @@
   color: black;
 }
 
-.ant-input::placeholder {
-  color: black;
-}
-
 .ant-row {
   display: block;
+}
+
+
+
+.ant-radio-wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 20px;
+}
+
+
+
+.ant-radio-wrapper .ant-radio-checked .ant-radio-inner {
+  border-color: #6750A4;
+  background-color: #6750A4;
+}
+
+:where(.css-dev-only-do-not-override-1n7nwfa).ant-form-item .ant-form-item-control-input {
+  min-height: 0;
+}
+
+
+.ant-input-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ant-radio-group {
+  display: inline-flex;
+}
+
+.ant-switch-inner,
+.ant-switch {
+  width: 52px;
+}
+
+.ant-switch.ant-switch-checked:hover:not(.ant-switch-disabled),
+.ant-switch.ant-switch-checked,
+:where(.css-dev-only-do-not-override-1n7nwfa).ant-switch {
+  background: #E7E0EC;
+}
+
+.ant-switch.ant-switch-checked {
+  background: #6750A4;
+}
+
+:where(.css-dev-only-do-not-override-1n7nwfa).ant-switch:hover:not(.ant-switch-disabled) {
+  background: #6750A4;
+  opacity: 0.5;
+}
+
+.ant-switch:not(.ant-switch-checked)>.ant-switch-handle::before {
+  background-color: #79747E;
+}
+
+:where(.css-dev-only-do-not-override-1n7nwfa).ant-switch .ant-switch-inner .ant-switch-inner-unchecked {
+  color: #79747E;
+
 }

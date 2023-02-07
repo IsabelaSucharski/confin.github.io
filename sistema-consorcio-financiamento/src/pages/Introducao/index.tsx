@@ -24,7 +24,7 @@ export const Introducao: React.FC = () => {
 
       <div className="divButton">
         <Link to={"formulario"}>
-          <ButtonNext toPage={2} />
+          <ButtonNext />
         </Link>
       </div>
     </Card>

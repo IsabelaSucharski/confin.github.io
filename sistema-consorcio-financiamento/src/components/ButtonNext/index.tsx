@@ -1,23 +1,9 @@
 import React from "react";
-import usePage from "../../usePage";
-
 import "./styles.css";
 
-interface IButtonProps {
-  toPage: number;
-}
-
-export const ButtonNext: React.FC<IButtonProps> = ({ toPage }) => {
-  const { page, setPage } = usePage();
-
+export const ButtonNext: React.FC = () => {
   return (
-    <button
-      className="button"
-      onClick={() => {
-        console.log("button", toPage);
-        setPage(toPage);
-      }}
-    >
+    <button className="button" type="submit">
       Próximo
     </button>
   );
