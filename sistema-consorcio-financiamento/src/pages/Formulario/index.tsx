@@ -17,7 +17,7 @@ export const Formulario: React.FC = () => {
       <h3>Preencha alguns campos</h3>
       <Form
         name="basic"
-        wrapperCol={{ span: 22 }}
+        wrapperCol={{ span: 23 }}
         onFinish={onFinish}
         style={{
           width: "500px",
@@ -29,12 +29,7 @@ export const Formulario: React.FC = () => {
         autoComplete="off"
       >
         <Input.Group compact>
-          <Form.Item
-            name="nome"
-            label="Qual seu nome"
-            rules={[{ required: true, message: "Por favor insira seu nome" }]}
-            style={{ width: "70%" }}
-          >
+          <Form.Item name="nome" label="Qual seu nome" style={{ width: "70%" }}>
             <Input />
           </Form.Item>
           <Form.Item
@@ -53,14 +48,24 @@ export const Formulario: React.FC = () => {
             label="Qual valor do imóvel"
             style={{ width: "50%" }}
           >
-            <Input />
+            <InputNumber
+              formatter={(value) =>
+                `$ ${value}`.replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+              }
+              parser={(value) => value!.replace(/\$\s?|(,*)/g, "")}
+            />
           </Form.Item>
           <Form.Item
             name="valorMensal"
             label="Quanto deseja pagar por mês"
             style={{ width: "50%" }}
           >
-            <Input />
+            <InputNumber
+              formatter={(value) =>
+                `$ ${value}`.replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+              }
+              parser={(value) => value!.replace(/\$\s?|(,*)/g, "")}
+            />
           </Form.Item>
         </Input.Group>
         <Input.Group
@@ -69,13 +74,15 @@ export const Formulario: React.FC = () => {
             alignItems: "center",
             justifyContent: "space-between",
             marginBottom: "15px",
+            width: "100%",
           }}
         >
-          <Form.Item
-            name="prazo"
-            label="Necessita o imóvel a curto ou longo prazo"
-          >
-            <Radio.Group>
+          <Form.Item name="prazo" style={{ width: "100%" }}>
+            <span style={{ width: "50%" }}>
+              Necessita o imóvel a curto ou longo prazo
+            </span>
+
+            <Radio.Group style={{ width: "50%" }}>
               <Radio value={1}>Curto prazo</Radio>
               <Radio value={2}>Longo prazo</Radio>
             </Radio.Group>
