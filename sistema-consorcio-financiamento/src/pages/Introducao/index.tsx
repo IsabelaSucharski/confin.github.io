@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { ButtonNext } from "../../components/ButtonNext";
-import { Card } from "../../components/Card";
+import { CardComponent } from "../../components/Card";
 import { Header } from "../../components/Header";
 import "./styles.css";
 
 export const Introducao: React.FC = () => {
   return (
-    <Card>
+    <CardComponent>
       <Header />
       <div className="divText">
         Somos um sistema que oferece dicas a voce!!
@@ -27,6 +27,6 @@ export const Introducao: React.FC = () => {
           <ButtonNext />
         </Link>
       </div>
-    </Card>
+    </CardComponent>
   );
 };

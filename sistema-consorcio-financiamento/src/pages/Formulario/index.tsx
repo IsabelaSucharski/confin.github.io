@@ -1,10 +1,11 @@
 import React from "react";
 import { Form, Input, InputNumber, Radio, Switch } from "antd";
-import { Card } from "../../components/Card";
+import { CardComponent } from "../../components/Card";
 import { Header } from "../../components/Header";
 import { CheckOutlined, CloseOutlined } from "@ant-design/icons";
 import "./styles.css";
 import { ButtonNext } from "../../components/ButtonNext";
+import { Link } from "react-router-dom";
 
 export const Formulario: React.FC = () => {
   const onFinish = (values: any) => {
@@ -12,7 +13,7 @@ export const Formulario: React.FC = () => {
   };
 
   return (
-    <Card>
+    <CardComponent>
       <Header />
       <h3>Preencha alguns campos</h3>
       <Form
@@ -140,9 +141,11 @@ export const Formulario: React.FC = () => {
         </Input.Group>
 
         <div className="divButton">
-          <ButtonNext />
+          <Link to="/resultado">
+            <ButtonNext />
+          </Link>
         </div>
       </Form>
-    </Card>
+    </CardComponent>
   );
 };

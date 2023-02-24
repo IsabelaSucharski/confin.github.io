@@ -5,6 +5,7 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { Formulario } from "./pages/Formulario";
+import { Resultado } from "./pages/Resultado";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
   {
     path: "formulario",
     element: <Formulario />,
+  },
+  {
+    path: "resultado",
+    element: <Resultado />,
   },
 ]);
 
