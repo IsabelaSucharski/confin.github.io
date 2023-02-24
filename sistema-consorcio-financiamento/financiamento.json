@@ -8,7 +8,20 @@ caixa 200.000
 - Valor de financiamento: R$ 160.000,00
 - Prazo de financiamento: 420meses
 - Taxa de juros: 0,74%
-- Parcela   1.585,96
+- Parcela 1.585,96
+
+caixa 250.000
+- Valor de financiamento: R$ 200.000,00
+- Prazo de financiamento: 420meses
+- Taxa de juros: 0,74%
+- Parcela 1.970,05
+
+caixa 300.000
+- Valor de financiamento: R$ 240.000,00
+- Prazo de financiamento: 420meses
+- Taxa de juros: 0,74%
+- Parcela 2.366,44
+
 
 
 santander 150.000
@@ -22,6 +35,18 @@ santander 200.000,00
 - Prazo de financiamento: 420meses
 - Taxa de juros: 0,82 % + tr
 - Parcela  1.001,57
+
+santander 250.000,00
+- Valor de financiamento: R$ 89.744,50
+- Prazo de financiamento: 420meses
+- Taxa de juros: 0,82 % + tr
+- Parcela  1.001,57
+
+santander 300.000,00
+- Valor de financiamento: R$ 89.519,43
+- Prazo de financiamento: 420meses
+- Taxa de juros: 0,82 % + tr
+- Parcela  1.001,73
 
 
 
@@ -37,6 +62,19 @@ banco do brasil 200.000
 - Taxa de juros: 0,915%
 - Parcela  1.789,10
 
+banco do brasil 250.000
+- Valor de financiamento: R$ 200.000,00
+- Prazo de financiamento: 360meses
+- Taxa de juros: 0,915%
+- Parcela  2.230,12
+
+banco do brasil 300.000,00
+- Valor de financiamento: R$ 240.000,00
+- Prazo de financiamento: 420meses
+- Taxa de juros: 0,915
+- Parcela  2.671,14
+
+
 
 bradesco 150.000
 - Valor de financiamento: R$ 120.000,00
@@ -45,10 +83,24 @@ bradesco 150.000
 - Parcela  1.425,09
 
 bradesco 200.000
-- Valor de financiamento: R$ 160.000,00
+- Valor de financiamento: R$ 200.000,00
 - Prazo de financiamento: 420meses
 - Taxa de juros: 0,9575%
 - Parcela  1.891,78
+
+bradesco 250.000
+- Valor de financiamento: R$ 160.000,00
+- Prazo de financiamento: 420meses
+- Taxa de juros: 0,9575%
+- Parcela  2.358,48
+
+bradesco 300.000
+- Valor de financiamento: R$ 240.000,00
+- Prazo de financiamento: 420meses
+- Taxa de juros: 0,9575%
+- Parcela  2.825,17
+
+
 
 
 itau 150.000
@@ -62,3 +114,15 @@ itau 200.000
 - Prazo de financiamento: 420meses
 - Taxa de juros: 0,965%
 - Parcela 2.135,65
+
+itau 250.000
+- Valor de financiamento: R$ 225.000,00
+- Prazo de financiamento: 420meses
+- Taxa de juros: 0,965%
+- Parcela 2.663,32
+
+itau 300.000
+- Valor de financiamento: R$ 270.000,00
+- Prazo de financiamento: 420meses
+- Taxa de juros: 0,965%
+- Parcela 3.190,98
