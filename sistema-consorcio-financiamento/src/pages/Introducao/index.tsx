@@ -10,14 +10,14 @@ export const Introducao: React.FC = () => {
     <Card>
       <Header />
       <div className="divText">
-        Somos um sistema que oferece dicas a voce!!
+        Somos um sistema que oferece dicas para você!
         <p>
-          Se você quer comprar um imóvel e não sabe por onde começar, nós te
-          ajudamos...
+          Se você quer comprar um imóvel e não sabe por onde começar, nós
+          podemos ajudá-lo.
         </p>
         <p>
-          Comece preenchendo algumas perguntinhas de nosso formulário e, no fim,
-          te daremos uma dica valiosa.
+          Comece preenchendo algumas perguntinhas em nosso formulário e, no fim,
+          daremos uma dica valiosa para você.
         </p>
         Vamos lá?
       </div>

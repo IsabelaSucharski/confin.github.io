@@ -1,4 +1,5 @@
-import React from "react";
+/* eslint-disable react-hooks/exhaustive-deps */
+import React, { useEffect } from "react";
 import { Form, Input, InputNumber, Radio, Switch } from "antd";
 import { Card } from "../../components/Card";
 import { Header } from "../../components/Header";
@@ -7,9 +8,11 @@ import "./styles.css";
 import { ButtonNext } from "../../components/ButtonNext";
 
 export const Formulario: React.FC = () => {
-  const onFinish = (values: any) => {
-    console.log("Success:", values);
+  const onFinish = async () => {
+    let response = await fetch("http://localhost:3001/consorcio");
+    console.log(await response.json());
   };
+
 
   return (
     <Card>
@@ -77,12 +80,11 @@ export const Formulario: React.FC = () => {
             width: "100%",
           }}
         >
-          <Form.Item name="prazo" style={{ width: "100%" }}>
-            <span style={{ width: "50%" }}>
-              Necessita o imóvel a curto ou longo prazo
-            </span>
-
-            <Radio.Group style={{ width: "50%" }}>
+          <Form.Item
+            name="prazo"
+            label="Necessita o imóvel a curto ou longo prazo"
+          >
+            <Radio.Group>
               <Radio value={1}>Curto prazo</Radio>
               <Radio value={2}>Longo prazo</Radio>
             </Radio.Group>
@@ -140,7 +142,7 @@ export const Formulario: React.FC = () => {
         </Input.Group>
 
         <div className="divButton">
-          <ButtonNext />
+          <ButtonNext onclick={onFinish}/>
         </div>
       </Form>
     </Card>

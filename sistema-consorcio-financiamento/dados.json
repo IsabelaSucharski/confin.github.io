@@ -1,0 +1,208 @@
+{
+  "consorcio": [
+    {
+      "banco": "Santander",
+      "parcelas": "235",
+      "valorParcela": "595,11",
+      "valorCredito": "100.000,00"
+    },
+    {
+      "banco": "Santander",
+      "parcelas": "236",
+      "valorParcela": "597,34",
+      "valorCredito": "100.000,00"
+    },
+    {
+      "banco": "Santander",
+      "parcelas": "240",
+      "valorParcela": "588,34",
+      "valorCredito": "100.000,00"
+    },
+    {
+      "banco": "Santander",
+      "parcelas": "199",
+      "valorParcela": "687,38",
+      "valorCredito": "100.000,00"
+    },
+    {
+      "banco": "Santander",
+      "parcelas": "159",
+      "valorParcela": "840,60",
+      "valorCredito": "100.080,45"
+    },
+    {
+      "banco": "Bradesco",
+      "parcelas": "190",
+      "valorParcela": "889,39",
+      "valorCredito": "120.000,00"
+    },
+    {
+      "banco": "Bradesco",
+      "parcelas": "190",
+      "valorParcela": "963,51",
+      "valorCredito": "130.000,00"
+    },
+    {
+      "banco": "Bradesco",
+      "parcelas": "190",
+      "valorParcela": "1037,62",
+      "valorCredito": "140.000,00"
+    },
+    {
+      "banco": "Bradesco",
+      "parcelas": "190",
+      "valorParcela": "1111,74",
+      "valorCredito": "150.000,00"
+    },
+    {
+      "banco": "Bradesco",
+      "parcelas": "190",
+      "valorParcela": "1185,56",
+      "valorCredito": "160.000,00"
+    },
+    {
+      "banco": "Itaú",
+      "parcelas": "154",
+      "valorParcela": "1.001,17",
+      "valorCredito": "108.119,00"
+    },
+    {
+      "banco": "Itaú",
+      "parcelas": "180",
+      "valorParcela": "1.163,15",
+      "valorCredito": "150.000,00"
+    },
+    {
+      "banco": "Itaú",
+      "parcelas": "165",
+      "valorParcela": "1.197,11",
+      "valorCredito": "144.291,49"
+    },
+    {
+      "banco": "Itaú",
+      "parcelas": "235",
+      "valorParcela": "1.197,99",
+      "valorCredito": "150.741,00"
+    },
+    {
+      "banco": "Itaú",
+      "parcelas": "156",
+      "valorParcela": "595,11",
+      "valorCredito": "100.000,00"
+    },
+    {
+      "banco": "Itaú",
+      "parcelas": "180",
+      "valorParcela": "736,66",
+      "valorCredito": "95.000,00"
+    },
+    {
+      "banco": "Itaú",
+      "parcelas": "156",
+      "valorParcela": "595,11",
+      "valorCredito": "100.000,00"
+    },
+    {
+      "banco": "Itaú",
+      "parcelas": "184",
+      "valorParcela": "750,23",
+      "valorCredito": "100.000,00"
+    },
+    {
+      "banco": "Itaú",
+      "parcelas": "178",
+      "valorParcela": "759,09",
+      "valorCredito": "98.145,00"
+    },
+    {
+      "banco": "Itaú",
+      "parcelas": "184",
+      "valorParcela": "787,76",
+      "valorCredito": "105.000,00"
+    },
+    {
+      "banco": "Itaú",
+      "parcelas": "154",
+      "valorParcela": "938,61",
+      "valorCredito": "101.361,56"
+    },
+    {
+      "banco": "Itaú",
+      "parcelas": "155",
+      "valorParcela": "1.476,47",
+      "valorCredito": "167.908,18"
+    },
+    {
+      "banco": "Itaú",
+      "parcelas": "198",
+      "valorParcela": "1.516,11",
+      "valorCredito": "204.303,91"
+    },
+    {
+      "banco": "Itaú",
+      "parcelas": "180",
+      "valorParcela": "1.522,78",
+      "valorCredito": "200.000,00"
+    },
+    {
+      "banco": "Itaú",
+      "parcelas": "156",
+      "valorParcela": "1.524,71",
+      "valorCredito": "174.366,46"
+    },
+    {
+      "banco": "Itaú",
+      "parcelas": "167",
+      "valorParcela": "1.837,36",
+      "valorCredito": "227.400,00"
+    },
+    {
+      "banco": "Itaú",
+      "parcelas": "164",
+      "valorParcela": "1.876,56",
+      "valorCredito": "228.517,58"
+    },
+    {
+      "banco": "Itaú",
+      "parcelas": "180",
+      "valorParcela": "1.903,47",
+      "valorCredito": "250.000,00"
+    },
+    {
+      "banco": "Itaú",
+      "parcelas": "169",
+      "valorParcela": "1.961,47",
+      "valorCredito": "245.586,00"
+    },
+    {
+      "banco": "Itaú",
+      "parcelas": "169",
+      "valorParcela": "2.050,63",
+      "valorCredito": "256.749,00"
+    },
+    {
+      "banco": "Itaú",
+      "parcelas": "180",
+      "valorParcela": "2.284,16",
+      "valorCredito": "300.000,00"
+    },
+    {
+      "banco": "Itaú",
+      "parcelas": "169",
+      "valorParcela": "2.318,14",
+      "valorCredito": "290.238,00"
+    },
+    {
+      "banco": "Itaú",
+      "parcelas": "165",
+      "valorParcela": "2.356,55",
+      "valorCredito": "288.582,98"
+    },
+    {
+      "banco": "Itaú",
+      "parcelas": "169",
+      "valorParcela": "2.407,29",
+      "valorCredito": "301.401,00"
+    }
+  ]
+}

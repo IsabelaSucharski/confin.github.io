@@ -1,9 +1,14 @@
 import React from "react";
 import "./styles.css";
 
-export const ButtonNext: React.FC = () => {
+interface IButton {
+  onclick?(): Promise<void> 
+}
+
+
+export const ButtonNext: React.FC<IButton> = ({ onclick }) => {
   return (
-    <button className="button" type="submit">
+    <button className="button" type="submit" onClick={onclick}>
       Próximo
     </button>
   );
