@@ -204,5 +204,167 @@
       "valorParcela": "2.407,29",
       "valorCredito": "301.401,00"
     }
+  ],
+  "financiamento": [
+    {
+      "banco": "Caixa",
+      "parcelas": "420",
+      "valorImovel": "150.000,00",
+      "valorFinanciamento": "120.000,00",
+      "valorParcela": "1.195,72",
+      "taxaJuros": "0,72%"
+    },
+    {
+      "banco": "Caixa",
+      "parcelas": "420",
+      "valorImovel": "200.000,00",
+      "valorFinanciamento": "160.000,00",
+      "valorParcela": "1.585,96",
+      "taxaJuros": "0,74%"
+    },
+    {
+      "banco": "Caixa",
+      "parcelas": "420",
+      "valorImovel": "250.000,00",
+      "valorFinanciamento": "200.000,00",
+      "valorParcela": "1.970,05",
+      "taxaJuros": "0,74%"
+    },
+    {
+      "banco": "Caixa",
+      "parcelas": "420",
+      "valorImovel": "300.000,00",
+      "valorFinanciamento": "240.000,00",
+      "valorParcela": "2.366,44",
+      "taxaJuros": "0,74%"
+    },
+    {
+      "banco": "Santander",
+      "parcelas": "144",
+      "valorImovel": "150.000,00",
+      "valorFinanciamento": "60.000,00",
+      "valorParcela": "1.195,72",
+      "taxaJuros": "0,82% + tr"
+    },
+    {
+      "banco": "Santander",
+      "parcelas": "420",
+      "valorImovel": "200.000,00,00",
+      "valorFinanciamento": "79.969,56",
+      "valorParcela": "1.001,57",
+      "taxaJuros": "0,82% + tr"
+    },
+    {
+      "banco": "Santander",
+      "parcelas": "420",
+      "valorImovel": "250.000,00,00",
+      "valorFinanciamento": "89.744,50",
+      "valorParcela": "1.001,57",
+      "taxaJuros": "0,82% + tr"
+    },
+    {
+      "banco": "Santander",
+      "parcelas": "420",
+      "valorImovel": "300.000,00,00",
+      "valorFinanciamento": "89.519,43",
+      "valorParcela": "1.001,73",
+      "taxaJuros": "0,82% + tr"
+    },
+    {
+      "banco": "Banco do Brasil",
+      "parcelas": "360",
+      "valorImovel": "150.000,00",
+      "valorFinanciamento": "120.000,00",
+      "valorParcela": "1.348,07",
+      "taxaJuros": "0,915%"
+    },
+    {
+      "banco": "Banco do Brasil",
+      "parcelas": "360",
+      "valorImovel": "200.000,00,00",
+      "valorFinanciamento": "160.000,00",
+      "valorParcela": "1.789,10",
+      "taxaJuros": "0,915%"
+    },
+    {
+      "banco": "Banco do Brasil",
+      "parcelas": "360",
+      "valorImovel": "250.000,00,00",
+      "valorFinanciamento": "200.000,00",
+      "valorParcela": "2.230,12",
+      "taxaJuros": "0,915%"
+    },
+    {
+      "banco": "Banco do Brasil",
+      "parcelas": "360",
+      "valorImovel": "300.000,00,00",
+      "valorFinanciamento": "240.000,00",
+      "valorParcela": "2.671,14",
+      "taxaJuros": "0,915%"
+    },
+    {
+      "banco": "Bradesco",
+      "parcelas": "420",
+      "valorImovel": "150.000,00,00",
+      "valorFinanciamento": "120.000,00",
+      "valorParcela": "2.671,14",
+      "taxaJuros": "0,9575%"
+    },
+    {
+      "banco": "Bradesco",
+      "parcelas": "420",
+      "valorImovel": "200.000,00,00",
+      "valorFinanciamento": "200.000,00",
+      "valorParcela": "2.671,14",
+      "taxaJuros": "0,9575%"
+    },
+    {
+      "banco": "Bradesco",
+      "parcelas": "420",
+      "valorImovel": "250.000,00,00",
+      "valorFinanciamento": "160.000,00",
+      "valorParcela": "2.671,14",
+      "taxaJuros": "0,9575%"
+    },
+    {
+      "banco": "Bradesco",
+      "parcelas": "420",
+      "valorImovel": "300.000,00,00",
+      "valorFinanciamento": "240.000,00",
+      "valorParcela": "2.671,14",
+      "taxaJuros": "0,9575%"
+    },
+    {
+      "banco": "Itaú",
+      "parcelas": "420",
+      "valorImovel": "150.000,00,00",
+      "valorFinanciamento": " 135.000,00",
+      "valorParcela": "1.607,98",
+      "taxaJuros": "0,965%"
+    },
+    {
+      "banco": "Itaú",
+      "parcelas": "420",
+      "valorImovel": "200.000,00,00",
+      "valorFinanciamento": " 180.000,00",
+      "valorParcela": "2.135,65",
+      "taxaJuros": "0,965%"
+    },
+    {
+      "banco": "Itaú",
+      "parcelas": "420",
+      "valorImovel": "250.000,00,00",
+      "valorFinanciamento": " 225.000,00",
+      "valorParcela": "2.663,32",
+      "taxaJuros": "0,965%"
+    },
+    {
+      "banco": "Itaú",
+      "parcelas": "420",
+      "valorImovel": "300.000,00,00",
+      "valorFinanciamento": " 270.000,00",
+      "valorParcela": "3.190,98",
+      "taxaJuros": "0,965%"
+    }
   ]
 }
