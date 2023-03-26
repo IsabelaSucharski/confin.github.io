@@ -1,36 +1,37 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import React, { useEffect } from "react";
+import React from "react";
 import { Form, Input, InputNumber, Radio, Switch } from "antd";
 import { CardComponent } from "../../components/Card";
 import { Header } from "../../components/Header";
 import { CheckOutlined, CloseOutlined } from "@ant-design/icons";
 import "./styles.css";
 import { ButtonNext } from "../../components/ButtonNext";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import { useForm } from "antd/es/form/Form";
 
 export const Formulario: React.FC = () => {
-  const onFinish = async () => {
-    let response = await fetch("http://localhost:3001/consorcio");
-    console.log(await response.json());
+  const [form] = useForm();
+  const navigate = useNavigate();
+  const setDados = () => {
+    navigate("/resultado", { state: form.getFieldsValue() });
+    return;
   };
-
 
   return (
     <CardComponent>
       <Header />
       <h3>Preencha alguns campos</h3>
       <Form
+        form={form}
         name="basic"
         wrapperCol={{ span: 23 }}
-        onFinish={onFinish}
+        onFinish={setDados}
         style={{
           width: "500px",
           display: "flex",
           flexDirection: "column",
           gap: "10px",
         }}
-        initialValues={{ remember: true }}
-        autoComplete="off"
       >
         <Input.Group compact>
           <Form.Item name="nome" label="Qual seu nome" style={{ width: "70%" }}>
@@ -84,6 +85,7 @@ export const Formulario: React.FC = () => {
           <Form.Item
             name="prazo"
             label="Necessita o imóvel a curto ou longo prazo"
+            rules={[{ required: true, message: "Por favor selecione" }]}
           >
             <Radio.Group>
               <Radio value={1}>Curto prazo</Radio>
@@ -143,7 +145,7 @@ export const Formulario: React.FC = () => {
         </Input.Group>
 
         <div className="divButton">
-          <ButtonNext onclick={onFinish}/>
+          <ButtonNext />
         </div>
       </Form>
     </CardComponent>
