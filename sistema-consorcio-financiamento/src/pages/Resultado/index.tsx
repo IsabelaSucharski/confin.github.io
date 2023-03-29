@@ -13,6 +13,7 @@ import {
 
 export const Resultado: React.FC = () => {
   const [dados, setDados] = useState<any>([]);
+  const [resultadoPorValor, setResultadoPorValor] = useState<boolean>(false);
   const location = useLocation();
 
   const { prazo } = location.state;
@@ -32,39 +33,45 @@ export const Resultado: React.FC = () => {
         valorMensal,
       } = location.state;
       if (
-        prazo === 1 ||
-        carteiraAssinada ||
-        fgtsPagamento ||
-        financiamentoVigente ||
-        imovelNome ||
-        residencial
+        idade >= 18 &&
+        (prazo === 1 ||
+          carteiraAssinada ||
+          fgtsPagamento ||
+          financiamentoVigente ||
+          imovelNome ||
+          residencial)
       ) {
         if (valorImovel) {
           let response = await getValorImovel(valorImovel, "financiamento");
+          setResultadoPorValor(true);
           return response;
         }
 
         if (valorMensal) {
           let response = await getValorParcela(valorMensal, "financiamento");
+          setResultadoPorValor(true);
           return response;
         }
         let response = await getFinanciamento();
         return response;
       } else if (
-        prazo === 2 ||
-        !carteiraAssinada ||
-        !fgtsPagamento ||
-        !financiamentoVigente ||
-        !imovelNome ||
-        !residencial
+        idade >= 18 &&
+        (prazo === 2 ||
+          !carteiraAssinada ||
+          !fgtsPagamento ||
+          !financiamentoVigente ||
+          !imovelNome ||
+          !residencial)
       ) {
         if (valorImovel) {
           let response = await getValorImovel(valorImovel, "consorcio");
+          setResultadoPorValor(true);
           return response;
         }
 
         if (valorMensal) {
           let response = await getValorParcela(valorMensal, "consorcio");
+          setResultadoPorValor(true);
           return response;
         }
         let response = await getConsorcio();
@@ -76,15 +83,17 @@ export const Resultado: React.FC = () => {
       const data = await onFinish();
       setDados(data);
     }
+
     getData();
   }, [location.state]);
 
   const handleFilter = async (e: any, tipo: string) => {
+    if (e.target.value === "Todos") {
+      window.location.reload();
+    }
     const result = await getPorBanco(e.target.value, tipo);
     setDados(result);
   };
-
-  console.log(!dados.lenght);
 
   return (
     <CardComponent>
@@ -98,25 +107,30 @@ export const Resultado: React.FC = () => {
         }}
       >
         {prazo === 2 ? <span>Consórcios</span> : <span>Financiamentos</span>}
-        <select
-          id="filtro"
-          onChange={(e) =>
-            handleFilter(e, prazo === 2 ? "consorcio" : "financiamento")
-          }
-        >
-          <option value="Santander" key="Santander" label="Santander">
-            Santander
-          </option>
-          <option value="Bradesco" key="Bradesco" label="Bradesco">
-            Bradesco
-          </option>
-          <option value="Itaú" key="Itaú" label="Itaú">
-            Itaú
-          </option>
-          <option value="Caixa" key="Caixa" label="Caixa">
-            Caixa
-          </option>
-        </select>
+        {!resultadoPorValor && (
+          <select
+            id="filtro"
+            onChange={(e) =>
+              handleFilter(e, prazo === 2 ? "consorcio" : "financiamento")
+            }
+          >
+            <option value="Todos" key="Todos" label="Todos">
+              Todos
+            </option>
+            <option value="Santander" key="Santander" label="Santander">
+              Santander
+            </option>
+            <option value="Bradesco" key="Bradesco" label="Bradesco">
+              Bradesco
+            </option>
+            <option value="Itaú" key="Itaú" label="Itaú">
+              Itaú
+            </option>
+            <option value="Caixa" key="Caixa" label="Caixa">
+              Caixa
+            </option>
+          </select>
+        )}
       </div>
       <div
         style={{
